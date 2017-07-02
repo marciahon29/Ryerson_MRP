@@ -1,10 +1,13 @@
-This folder contains a structure of "train" and "validation". Each with "alzheimers" and "nonalzheimers" MRI images. There are a total of 210 for each of training and a total of 90 for each of validation.
+This folder contains a structure of "train" and "validation". Each with "alzheimers" and "nonalzheimers" MRI images. 
+There are a total of 210 for each of training and a total of 90 for each of validation.
 
 These images were obtained from http://www.oasis-brains.org/ .
 
 These images were converted GIF to JPG.
 
-Additionally, there is a script called "ChangeNamesOfFiles.bat". This file was used to change the original names to YAL###.jpg and NAL###.jpg . YAL stands for "Yes Alzheimers" and NAL stands for "No Alzheimers".
+Additionally, there is a script called "ChangeNamesOfFiles.bat".
+This file was used to change the original names to YAL###.jpg and NAL###.jpg .
+YAL stands for "Yes Alzheimers" and NAL stands for "No Alzheimers".
 
 
 The following is the step by step instructions to get Keras working.
