@@ -1,0 +1,7 @@
+This folder contains the initial exploration to gain an understanding of TensorFlow, Keras, and the models: VGG16 and InceptionV3.
+
+The code was adopted from: https://github.com/fchollet/deep-learning-models
+
+With Inception, the "African Elephant" was correctly classified in the second guess.
+
+With VGG16, the first ten guesses did not guess "African Elephant".
