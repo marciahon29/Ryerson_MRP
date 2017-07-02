@@ -1,0 +1,14 @@
+ Scripts and Results of Using VGG16
+
+The code has been adopted from : https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html .
+
+These scripts used the data in "data.zip".
+
+There are three scripts:
+1. from_scratch_script_01.py : This builds a simple Convolutional Neural Network from scratch.
+2. bottleneck_pretrained_script_02.py : This uses the ImageNet pretrained VGG16 and it retrains the fully-connected layer (ie the final step of the Neural Net).
+3. toplayers_pretrained_script_03.py : This uses the ImageNet pretrained VGG16 model and uses the final layer created by step 2. In addition, it retrains the layers above.
+
+The accuracy scripts (accuracy_script_1, accuracy_script_2, and accuracy_script_3), are the results of the scripts from above.
+
+You must also download the file called: vgg16_weights.h5 . This can be found at https://gist.github.com/lxc-xx/3c5370ed722ad4d09412 .
