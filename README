@@ -1,4 +1,4 @@
-This folder contains a structure of "train" and "validation". Each with "alzheimers" and "nonalzheimers" MRI images. 
+This folder (in data.zip) contains a structure of "train" and "validation". Each with "alzheimers" and "nonalzheimers" MRI images. 
 There are a total of 210 for each of training and a total of 90 for each of validation.
 
 These images were obtained from http://www.oasis-brains.org/ .
