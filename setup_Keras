@@ -1,0 +1,15 @@
+The following is the step by step instructions to get Keras working.
+
+The operating system is Ubuntu.
+
+The steps are:
+
+1. python -V (makesure it is 2.7)
+2. sudo apt install python-pip
+3. pip install numpy
+4. pip install pillow
+5. pip install scipy
+6. pip install keras
+7. pip instal h5py
+8. sudo apt-get install python-pip python-dev
+9. pip install tensorflow
