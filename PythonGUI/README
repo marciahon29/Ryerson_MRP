@@ -1,0 +1,3 @@
+These are simple Python GUIs that opens a JPEG and, using our models, classifies the image as either Alzheimer's or
+Non-Alzheimer's with the corresponding accuracies.
+
