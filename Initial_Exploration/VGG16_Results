@@ -1,0 +1,4 @@
+Using TensorFlow backend.
+2017-07-03 10:08:01.235101: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+('\nPredicted:', [(u'n03788365', u'mosquito_net', 0.11446036), (u'n15075141', u'toilet_tissue', 0.044671956), (u'n04209239', u'shower_curtain', 0.024937684), (u'n02804414', u'bassinet', 0.01508895), (u'n02786058', u'Band_Aid', 0.013897518), (u'n03887697', u'paper_towel', 0.0122221), (u'n04447861', u'toilet_seat', 0.010827646), (u'n02808440', u'bathtub', 0.0091481265), (u'n03131574', u'crib', 0.0090501625), (u'n03271574', u'electric_fan', 0.0085625164)])
+
