@@ -25,3 +25,5 @@ The steps are:
 7. pip instal h5py
 8. sudo apt-get install python-pip python-dev
 9. pip install tensorflow
+
+openCV --> sudo apt-get install python-opencv
