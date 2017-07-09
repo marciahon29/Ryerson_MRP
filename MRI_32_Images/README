@@ -1,1 +1,19 @@
+These are 32 MRI images per patient and there are 133 patients used per category.
+
+Therefore, 3200 images are used per category. For a total of 6400 images.
+
+I will be doing 10-fold. This means 2880 to 320 images.
+
+CDR (Clinical Dementia Rating):
+-	0 = nondemented
+-	0.5 = very mild dementia
+-	1 = mild dementia
+-	2 = moderate dementia
+-	CDR > 0 : probable AD
+
+I have classified:
+
+0 --> non-alzheimers
+>0 --> alzheimers
+
 
