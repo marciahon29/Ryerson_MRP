@@ -29,7 +29,7 @@ done
 
 
 320 is 10% of 3200:
-To select random and move: mv (ls | sort -R | head -320) validation
+To select random and move: mv `(ls | sort -R | head -320)` validation
 To move the rest: mv * test
 
 
