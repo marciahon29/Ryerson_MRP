@@ -27,3 +27,12 @@ The steps are:
 9. pip install tensorflow
 
 openCV --> sudo apt-get install python-opencv
+
+
+
+module load PYTHON/2.7.13
+pip install --user <program>
+
+
+chmod a+x <file>
+qsub -q gpu submit.pbs
