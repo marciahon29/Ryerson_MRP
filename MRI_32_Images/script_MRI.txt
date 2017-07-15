@@ -1,7 +1,0 @@
-seq=0
-for file in *.*
-do
-	seq=seq+1
-	foo=$(printf "%03d" seq)
-	cp file .\nonalzheimers\NAL"${foo}".jpg
-done
