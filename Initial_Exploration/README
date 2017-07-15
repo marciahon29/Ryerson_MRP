@@ -1,4 +1,4 @@
-This folder contains the initial exploration to gain an understanding of TensorFlow, Keras, and the models: VGG16 and InceptionV3.
+This folder contains the initial exploration to gain an understanding of TensorFlow, Keras, and the models: VGG16, InceptionV3, and InceptionV4.
 
 The code was adopted from: https://github.com/fchollet/deep-learning-models
 
