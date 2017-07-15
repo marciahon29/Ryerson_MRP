@@ -35,6 +35,7 @@ With 140 epochs my accuracy is : 0.9484
 With 150 epochs my accuracy is : 0.9355
 The batch size is 40.
 
+Since 140 epochs worked the best, it is the number of epochs used.
 
 All "VGG16_bottleneck_data_0#.py" scripts are very similar except:
 
