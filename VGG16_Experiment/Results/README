@@ -1,1 +1,14 @@
+The results naming convention is as follows:
+
+resutls_d##_e###_b##.txt
+
+d## is the dataset. This can be 00, 01, 02, 03, 04
+e### is the number of epochs. Here we have tested with 100 and 150 .
+b## is the batch size.
+
+
+To get a feel for what number of epochs is good, epochs of 100 and 150 were analyzed.
+
+With 100 epochs, the accuracy is : 0.9445
+With 150 epochs, the accuracy is :
 
