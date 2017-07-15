@@ -31,7 +31,8 @@ To obtain this data, please go to Ryerson_MRP/MRI_32_Images, folders data_00, da
 
 The number of epochs used are : 100 and 150 .
 With 100 epochs my accuracy is : 0.9445
-With 150 epochs my accuracy is : 
+With 140 epochs my accuracy is : 0.9484
+With 150 epochs my accuracy is : 0.9355
 The batch size is 40.
 
 
