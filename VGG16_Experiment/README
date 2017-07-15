@@ -4,7 +4,7 @@ The code has been adopted from : https://blog.keras.io/building-powerful-image-c
 
 Most specifically, it is from the script "bottlenect_pretrained_script_02.py"
 
-There are five data folders: data_00, data_01, data_02, data_03, and data_04. "YAL" stands for Yes-Alzheimers" and "NAL" stands for "No-Alzheimers". The number of files in "alzheimers" and "nonalzheimers" must match. To get download the data, please go to
+There are five data folders: data_00, data_01, data_02, data_03, and data_04. "YAL" stands for Yes-Alzheimers" and "NAL" stands for "No-Alzheimers". The number of files in "alzheimers" and "nonalzheimers" must match. To get download the data, please go to. The number of images must match between alzheimers and nonalzheimers.
 The following structure is necessary:
     data_##:
          train
@@ -25,3 +25,25 @@ The following structure is necessary:
                NAL0001.jpg
                NAL0002.jpg
                etc...
+
+I am using 5-fold with a total of 6400 images. 2560 training for each and 640 validation for each.
+To obtain this data, please go to Ryerson_MRP/MRI_32_Images, folders data_00, data_01, data_02, data_03, and data_04.
+
+The number of epochs used are : 100 and 150 .
+The batch size is 40.
+
+
+All "VGG16_bottleneck_data_0#.py" scripts are very similar except:
+
+Rename "00" to the appropriate data batch number.
+
+top_model_weights_path = 'bottleneck_00.h5'
+train_data_dir = 'data_00/train'
+validation_data_dir = 'data_00/validation'
+nb_train_samples = 5120
+nb_validation_samples = 1280
+epochs = 150
+batch_size = 40
+
+
+
