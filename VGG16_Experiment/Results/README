@@ -10,5 +10,9 @@ b## is the batch size.
 To get a feel for what number of epochs is good, epochs of 100 and 150 were analyzed.
 
 With 100 epochs, the accuracy is : 0.9445
-With 150 epochs, the accuracy is :
+With 140 epochs, the accuracy is : 0.9484
+With 150 epochs, the accuracy is : 0.9355
+
+Given these results, my scripts will run for 140 epochs.
+
 
