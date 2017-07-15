@@ -2,8 +2,12 @@ These are 32 MRI images per patient and there are 133 patients used per category
 
 Therefore, 3200 images are used per category. For a total of 6400 images.
 
-I will be doing 10-fold. This means 2880 to 320 images.
+I will be doing 5-fold. This means 5120 train to 1280 validation images in total. With 2560 training and 640 training for each of alzheimers and nonalzheimers.
 
+The images were taken from http://www.oasis-brains.org/ .
+
+---
+The following is how alzheimers and nonalzherimers were classified.
 CDR (Clinical Dementia Rating):
 -	0 = nondemented
 -	0.5 = very mild dementia
@@ -11,25 +15,15 @@ CDR (Clinical Dementia Rating):
 -	2 = moderate dementia
 -	CDR > 0 : probable AD
 
-I have classified:
-
 0 --> non-alzheimers
 >0 --> alzheimers
+---
+
+The scripts of "5_fold"* takes the data directly from Alzhermers.zip and NonAlzheimers.zip.
+In each directly (once extracted), you run the appropriate script, either 5_fold_alzheimers.sh or 5_fold_nonalzheimers.sh .
+Then, you have in a folder the alzheimers and nonalzherimers folders (created from above sentence) and the 5_folds_create_data.sh. This will create the 5-folds: data_00, data_01, data_02, data_03, and data_04.
+*Keep in mind that these is done using random numbers. Therefore the splits of the images, will not be the same.
 
 
-To rename files:
-mkdir alzheimers
-seq=0
-for file_name in */*
-do
-	seq=$((seq+1))
-	foo=$(printf "%04d" $seq)
-	cp $file_name alzheimers/YAL${foo}.jpg
-done
-
-
-320 is 10% of 3200:
-To select random and move: mv `(ls | sort -R | head -320)` validation
-To move the rest: mv * test
-
-
+---
+If you would like to download the actual data folders used in this project. Please download the folders: data_00, data_01, data_02, data_03, and data_04. Inside, there are tar.gz for train and validation. Extract these here and remove the *tar.gz files.
