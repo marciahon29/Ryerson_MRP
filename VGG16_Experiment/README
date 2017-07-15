@@ -30,6 +30,8 @@ I am using 5-fold with a total of 6400 images. 2560 training for each and 640 va
 To obtain this data, please go to Ryerson_MRP/MRI_32_Images, folders data_00, data_01, data_02, data_03, and data_04.
 
 The number of epochs used are : 100 and 150 .
+With 100 epochs my accuracy is : 0.9445
+With 150 epochs my accuracy is : 
 The batch size is 40.
 
 
