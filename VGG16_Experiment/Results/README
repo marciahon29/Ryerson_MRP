@@ -13,7 +13,7 @@ With 100 epochs, the accuracy is : 0.9445
 With 140 epochs, the accuracy is : 0.9484
 With 150 epochs, the accuracy is : 0.9355
 
-Given these results, my scripts will run for 140 epochs.
+Given these results, my scripts will run for 100 epochs.
 
 Testing folder contains the exploratory results.
 
