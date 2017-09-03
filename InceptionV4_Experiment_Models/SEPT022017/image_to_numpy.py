@@ -63,7 +63,7 @@ for folder in directories:
 					print "Removing image" + image
 					os.remove(input_dir+"/"+folder+"/"+image)
 
-print index
+		print index
 
 np.save('X_train.npy', out) #Saving train image arrays
 np.save('Y_train.npy', index_array) #Saving train labels
