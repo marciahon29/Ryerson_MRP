@@ -31,12 +31,19 @@ for folder in directories:
 
 				im = Image.open(input_dir+"/"+folder+"/"+image) #Opening image
 				im = (np.array(im)) #Converting to numpy array
+				im = im[:, :, :, ::-1]  ## According to SO
 
 				try:
-					r = im[:,:,0] #Slicing to get R data
-					g = im[:,:,1] #Slicing to get G data
-					b = im[:,:,2] #Slicing to get B data
+					#r = im[:,:,0] #Slicing to get R data
+					#g = im[:,:,1] #Slicing to get G data
+					#b = im[:,:,2] #Slicing to get B data
 
+					## According to SO
+					r = (im[:, :, :, 0] -= 103.939)
+					g = (im[:, :, :, 1] -= 116.779)
+					b = (im[:, :, :, 2] -= 123.68)
+					
+					
 					if index2 != 1:
 						new_array = np.array([[r] + [g] + [b]], np.uint8) #Creating array with shape (3, 100, 100)
 						out = np.append(out, new_array, 0) #Adding new image to array shape of (x, 3, 100, 100) where x is image number
