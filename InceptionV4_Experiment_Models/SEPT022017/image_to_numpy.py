@@ -2,14 +2,20 @@ import os
 
 from PIL import Image
 import numpy as np
+import cv2
+import cv
 
 #Directory containing images you wish to convert
-input_dir = "/Users/14/Documents/deep-learning-project/data/output_images/"
+input_dir = "/home/marcia/Desktop/InceptionV4_Sept022017/data_01/validation"
 
 directories = os.listdir(input_dir)
 
 index = 0
 index2 = 0
+out = 0
+new_array = 0
+new_index_array = 0
+index_array = 0
 
 for folder in directories:
 	#Ignoring .DS_Store dir
@@ -31,18 +37,18 @@ for folder in directories:
 
 				im = Image.open(input_dir+"/"+folder+"/"+image) #Opening image
 				im = (np.array(im)) #Converting to numpy array
-				im = im[:, :, :, ::-1]  ## According to SO
+				#im = im[:, :, :, ::-1]  ## According to SO
 
 				try:
-					#r = im[:,:,0] #Slicing to get R data
-					#g = im[:,:,1] #Slicing to get G data
-					#b = im[:,:,2] #Slicing to get B data
+					im = cv2.cvtColor(im, cv.CV_GRAY2RGB)
+					r = im[:,:,0] #Slicing to get R data
+					g = im[:,:,1] #Slicing to get G data
+					b = im[:,:,2] #Slicing to get B data
 
 					## According to SO
-					r = (im[:, :, :, 0] -= 103.939)
-					g = (im[:, :, :, 1] -= 116.779)
-					b = (im[:, :, :, 2] -= 123.68)
-					
+					#r = (im[:, :, :, 0] -= 103.939)
+					#g = (im[:, :, :, 1] -= 116.779)
+					#b = (im[:, :, :, 2] -= 123.68)
 					
 					if index2 != 1:
 						new_array = np.array([[r] + [g] + [b]], np.uint8) #Creating array with shape (3, 100, 100)
@@ -60,12 +66,12 @@ for folder in directories:
 
 				except Exception as e:
 					print e
-					print "Removing image" + image
-					os.remove(input_dir+"/"+folder+"/"+image)
+					#print "Removing image" + image
+					#os.remove(input_dir+"/"+folder+"/"+image)
 
 		print index
 
-np.save('X_train.npy', out) #Saving train image arrays
-np.save('Y_train.npy', index_array) #Saving train labels
+np.save('X_valid_00.npy', out) #Saving train image arrays
+np.save('Y_valid_00.npy', index_array) #Saving train labels
 
 
