@@ -24,6 +24,14 @@ Also, you must download the imageNet trained weights. Create a folder called: "i
     
 You must put all the python, data_##, and imagenet_models at the same level.
 
+To run the program, at command prompt:
+
+python inception_v4_02.py > accuracy_02_100e_8b.txt
+python inception_v4_03.py > accuracy_03_100e_8b.txt
+python inception_v4_04.py > accuracy_04_100e_8b.txt
+
+*For my home machine, it takes around 3-4 epochs per hour. Thus for 100 epochs, it is a little more than 24 hours.
+
 
 ----
 ----
