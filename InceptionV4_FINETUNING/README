@@ -1,1 +1,60 @@
 
+There are 3 python files for InceptionV4 Finetuning. They are located in this folder.
+
+They are called: inception_v4_02.py, inception_v4_03.py, and inceptionv4_04.py .
+
+In the same directory, you will need to get the images dataset located at:
+https://github.com/marciahon29/Ryerson_MRP/tree/master/MRI_32_Images
+
+These images are located under a folder called data_##. Within, there is train.tar.gz and validation.tar.gz . You must extract these.
+The final folder structure is:
+
+        data_## :
+          train
+          validation
+          
+For the script inception_v4_02.py, you are to use data_02. With inception_v4_03.py, use data_03. With inception_v4_04.py, use data_04.
+
+Also, you must download the imageNet trained weights. Create a folder called: "imagenet_models". Then upload to the folder the following
+"h5" files:
+
+    ImageNet Pretrained Weights 
+    Theano: https://github.com/kentsommer/keras-inceptionV4/releases/download/2.0/inception-v4_weights_th_dim_ordering_th_kernels.h5
+    TensorFlow: https://github.com/kentsommer/keras-inceptionV4/releases/download/2.0/inception-v4_weights_tf_dim_ordering_tf_kernels.h5
+    
+You must put all the python, data_##, and imagenet_models at the same level.
+
+
+----
+----
+You may encounter some problems, as per below:
+
+ip install -U scikit-learn
+put load_cifar10.py in folder
+pip install --upgrade pip
+
+python inception_v4.py
+
+Download: https://github.com/kentsommer/keras-inceptionV4/releases/download/2.0/inception-v4_weights_tf_dim_ordering_tf_kernels.h5
+
+
+Put into: imagenet_models/inception-v4_weights_tf_dim_ordering_tf_kernels.h5
+
+
+sudo apt install python3-pip
+pip3 install tensorflow
+pip install --upgrade pip
+
+pip3 install --upgrade \ https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.3.0-cp36-cp36m-linux_x86_64.whl
+
+
+
+
+sudo
+pip install keras==1.2.2
+pip install tensorflow=0.12.1 #1.0.1, 1.0.0, 0.12.1, 0.12.0
+
+(According to: https://github.com/flyyufelix/cnn_finetune/blob/master/README.md)
+pip install keras==1.2.2
+pip install tensorflow==0.12.0
+
