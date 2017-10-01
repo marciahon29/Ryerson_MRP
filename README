@@ -1,3 +1,16 @@
+The final results of this experiment are in the folders:
+
+1. InceptionV4_FineTunnign_ALL - finetuning with InceptionV4
+2. VGG16_Experiment - finetuning with VGG16 (weights)
+3. VGG16_Experiment_Models - finetuning with VGG16 (models)
+4. VGG16_None_Experiments - no finetuning, training VGG16 from scratch
+5. MRI_32_Images - all images and folders of datasets
+
+
+
+
+----
+
 This folder (in data.zip) contains a structure of "train" and "validation". Each with "alzheimers" and "nonalzheimers" MRI images. 
 There are a total of 210 for each of training and a total of 90 for each of validation.
 
